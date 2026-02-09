@@ -4,14 +4,19 @@ This is a simple notes app built with HTML, CSS and Node.js for my Software Deve
 
 ### File Structure
 
+```text
 Notes App Assignment/
 │
 ├── frontend/
 │   ├── css 
+│   │    └── styles.css
 │   ├── html
+│   │    ├── styles.css
+│   │    └── styles.css
 │   ├── js
+│   │    ├── login.js
+│   │    └── script.js
 │   └── media
-
 ├── models/
 │   └── models.js
 ├── node_modules/
@@ -27,6 +32,7 @@ Notes App Assignment/
 ### How to run the app
 
 1. Clone the repository
+git clone git@github.com:rowansalverda/notes-app-assignment
 
 2. Install the dependencies: 
 npm install 
