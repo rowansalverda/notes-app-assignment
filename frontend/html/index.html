@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+    <title>Notes App Assignment</title>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/frontend/css/styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<header>
+        <img src="/frontend/media/rs-logo-white.png" width="100">
+        <h1>Notes App Assignment</h1>
+    </header>
+
+<body>
+
+    <div id="app"></div>
+
+        <div id="notes-container">
+            <h2>Notes</h2>
+            <ul id="userNotes">
+                <!--User's notes go here-->
+            </ul>
+        </div>
+
+        <div id="form-container">
+            <h2>Form</h2>
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Title" required />
+                <textarea id="note-description" placeholder="Type your notes here." required ></textarea>
+                
+                <!--To pick the colour of note-->
+                <label for="note-color" style="color:white; text-align:center;">Choose a color:</label>
+                <select id="note-color">
+                    <option value="pink" selected>Pink</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                </select>
+
+                <button type="submit">Add Note</button>
+                </form>
+        </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+
+</html>

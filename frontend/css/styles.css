@@ -1,0 +1,152 @@
+/* This is a CSS Style Sheet for my Notes App Assignment */
+
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body { 
+    margin: 0px; 
+    padding: 0px;
+    font-family: "Indie Flower", cursive;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.2;
+    background: #222121;
+}
+
+header {
+    width: 100%;
+    background-color: #222121;
+    color: white;
+    padding: 12px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+}
+
+h2 {
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-family: "Indie Flower", cursive; 
+    font-weight: 400;
+}
+
+p {
+    color: white;  
+    font-family: "Indie Flower", cursive; 
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); 
+    text-align: center; 
+    padding: 0 20px; 
+}
+
+/* Notes form */
+
+#note-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 2px;
+    border: px #222121; 
+    padding: 16px; 
+}
+
+/* Custom Note Colors */
+
+.note--yellow { background: #ffd230; }
+.note--pink   { background: #ff74a8; }
+.note--blue   { background: #0cc0df; }
+.note--green  { background: #31c27c; }
+.note--purple { background: #b1a1ed; }
+
+/* Login information */
+
+#register-form-container,
+#login-form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#register-form,
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+button:hover {
+    background-color: #ff74a8;
+}
+
+button:active {
+    background-color: #31c27c;
+}
+
+/* USER's NOTES */
+
+#userNotes {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: min(1000px, 92%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Each note card */
+.note {
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border: 2px solid rgba(0,0,0,0.15);
+}
+
+.note h3,
+.note p,
+.note small {
+  color: #000;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.note h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.note p {
+  margin-bottom: 10px;
+}
+
+/* Buttons inside notes */
+.note .note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note .note-actions button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.note--yellow { background: #ffd230; }
+.note--pink   { background: #ff74a8; }
+.note--blue   { background: #0cc0df; }
+.note--green  { background: #31c27c; }
+.note--purple { background: #b1a1ed; }
